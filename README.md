@@ -8,7 +8,7 @@ I write it to help me to find which switch port where connected branch office's 
 
 Usage:
 
-mnap --script snmp-device-mac,http-device-mac <target>
+mnap --script snmp-device-mac,http-device-mac \<target\>
 
 
 Enjoy!
