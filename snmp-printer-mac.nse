@@ -60,7 +60,7 @@ action = function(host,port)
 	local result
 
         local r = snmp.fetchFirst(response)
-	if r ~= "" then
+	if r ~= "" and r ~= nil then
 		res1 = string.format("%02x:%02x:%02x:%02x:%02x:%02x",string.byte(r),string.byte(r,2),string.byte(r,3),string.byte(r,4),string.byte(r,5),string.byte(r,6)) 
 		return res1
 	end
@@ -80,7 +80,7 @@ action = function(host,port)
         end
         
 	local r2 = snmp.fetchFirst(response)
-	if r2 ~= "" then
+	if r2 ~= "" and r2 ~= nil then
 		res2 = string.format("%02x:%02x:%02x:%02x:%02x:%02x",string.byte(r2),string.byte(r2,2),string.byte(r2,3),string.byte(r2,4),string.byte(r2,5),string.byte(r2,6))
 		return res2
 	end
