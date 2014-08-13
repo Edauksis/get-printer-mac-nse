@@ -1,3 +1,6 @@
+local snmp = require "snmp"
+local shortport = require "shortport"
+
 description = [[
 Get MAC address from printers
 ]]
@@ -16,9 +19,6 @@ author = "Esteban Dauksis"
 license = "Same as Nmap--See http://nmap.org/book/man-legal.html"
 categories = {"discovery", "safe"}
 dependecies = {"snmp-brute"}
-
-require "snmp"
-require "shortport"
 
 -- I prefer a portrule for tcp 9100 than upd 161 for printer discovery
 -- portrule = shortport.portnumber(161, "udp", {"open", "open|filtered"})

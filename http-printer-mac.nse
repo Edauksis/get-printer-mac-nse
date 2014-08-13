@@ -1,3 +1,6 @@
+local shortport = require "shortport"
+local http = require "http"
+
 description = [[
 Get MAC address from printers
 ]]
@@ -14,9 +17,6 @@ Get MAC address from printers
 author = "Esteban Dauksis"
 license = "Same as Nmap--See http://nmap.org/book/man-legal.html"
 categories = {"discovery", "safe"}
-
-require "shortport"
-require "http"
 
 portrule = shortport.portnumber(9100, "tcp", "open")
 
