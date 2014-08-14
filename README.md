@@ -1,6 +1,6 @@
 
 
-NMAP scripts to get MAC addresses from printers
+NMAP scripts to get MAC addresses from printers, scanners,...
 
 
 I write it to help me to find which switch port where connected branch office's printers 
